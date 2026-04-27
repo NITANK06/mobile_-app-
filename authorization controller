@@ -2,16 +2,11 @@ exports.sendOTP = async (req, res) => {
   const { phone } = req.body;
   const otp = generateOTP();
 
-  // Save OTP in DB
-  // (skip SMS API for now)
-  
-  res.json({ message: "OTP sent", otp }); // for testing
+ res.json({ message: "OTP sent", otp }); // for testing
 };
 
 exports.verifyOTP = async (req, res) => {
   const { phone, otp } = req.body;
-
-  // Validate OTP from DB
 
   const token = jwt.sign({ phone }, "secret", { expiresIn: "7d" });
 
