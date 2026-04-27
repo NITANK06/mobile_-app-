@@ -1,23 +1,26 @@
- mobile_-app-
+**MOBILE APP**
 
- Project Manager App
 
- Features
+** Features**
+ 
  OTP Authentication
  Project Management
  Task Tracking
 
- Tech Stack
+** Tech Stack**
+ 
  React Native (Expo)
  Node.js + Express
  PostgreSQL
 
- Setup
+ **Setup**
 
- Backend
+** Backend**
+
 npm install
 npm run dev
 
- Frontend
+** Frontend**
+
 npm install
 expo start
